@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # ============= Paths =============
-MAIN_FOLDER = r"C:\Users\gabra\data\Economics"
+MAIN_FOLDER = r"C:\Users\username\data\Economics"
 income_file = os.path.join(MAIN_FOLDER, "Median_HH_Income_1995_2019.xlsx")
 
 # ============= Load raw price data =============
@@ -120,5 +120,6 @@ merged = merged.sort_values('Year').drop_duplicates(subset='Year')
 output_path = os.path.join(MAIN_FOLDER, "Staples_Merged_With_Income.csv")
 merged.to_csv(output_path, index=False)
 
-print("✅ Final merged file with household income saved to:")
+print("Final merged file with household income saved to:")
 print(output_path)
+
