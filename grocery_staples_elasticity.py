@@ -7,7 +7,7 @@ import statsmodels.api as sm
 import matplotlib.pyplot as plt
 
 # ===== Paths =====
-MAIN_FOLDER = r"C:\Users\gabra\data\Economics\Grocery Staples\OLD data 2024"
+MAIN_FOLDER = r"C:\Users\username\data\Economics"
 MERGED_FILE = os.path.join(MAIN_FOLDER, "Staples_Merged_With_Income.csv")
 
 # ===== Load merged wide dataset (Year-level, prices, quantities, income) =====
@@ -146,3 +146,4 @@ print(df_results)
 out_res = os.path.join(MAIN_FOLDER, "Staples_Elasticity_Summary.csv")
 df_results.to_csv(out_res, index=False)
 print("Saved:", out_res)
+
